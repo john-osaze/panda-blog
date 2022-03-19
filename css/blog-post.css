@@ -1,0 +1,306 @@
+/* Imported CSS Files */
+@import url(variables.css);
+@import url(fonts.css);
+@import url(global.css);
+@import url(header.css);
+@import url(footer.css);
+
+.container {
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+main {
+  margin-top: 6rem !important;
+}
+
+.page-title a {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.page-title a > span {
+  text-transform: uppercase;
+  font: normal bold 1.25rem/1.5rem var(--latoBold);
+  color: var(--dark);
+}
+
+.blog-post .blog-title {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.blog-post .blog-title h3 {
+  font-family: var(--utopiaBold);
+  font-size: 4.5rem;
+}
+
+.blog-post .blog-title cite {
+  display: block;
+  margin-top: 1rem;
+  font: normal normal 1.5rem/3rem var(--lato);
+}
+
+.blog-post .blog-hero {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.blog-post .blog-hero img {
+  display: block;
+  margin-bottom: 1.5rem;
+  max-width: 100%;
+  max-height: 50rem;
+}
+
+.blog-post .blog-hero cite {
+  font-size: 1.3rem !important;
+  display: block;
+  font-family: var(--lato);
+  text-transform: capitalize;
+  padding-bottom: 2rem;
+  margin: 0 auto;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.blog-post .blog-article {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  margin-top: 7.5rem;
+}
+
+.blog-post .blog-article aside ol li {
+  margin-bottom: 1.15rem;
+  border: 1px solid #cfcfcf;
+  padding: 0.85rem 1rem;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+
+.blog-post .blog-article article {
+  padding-left: 10rem;
+  max-width: 85%;
+}
+
+.blog-post .blog-article article .first-paragraph {
+  font: oblique normal 1.75rem/2.5rem var(--latoBold);
+}
+
+.blog-post .blog-article article p {
+  line-height: 2.25rem;
+  margin-bottom: 4rem;
+}
+
+.break {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+.break figure {
+  width: 0.2rem;
+  height: 0.6rem;
+  transform: rotate(30deg);
+  border-radius: 0.2px;
+  margin: 0 0.4rem;
+  background-color: var(--dark);
+}
+
+.blog-post .blog-article article blockquote {
+  margin: 4rem 0;
+}
+
+.blog-post .blog-article article blockquote .quote-top,
+.blog-post .blog-article blockquote .quote-bottom {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.blog-post .blog-article article blockquote .quote-top {
+  align-items: flex-start !important;
+}
+
+.blog-post .blog-article article blockquote .quote-top i {
+  font-size: 7.5rem;
+  line-height: 6rem;
+  color: var(--dark);
+  font-family: var(--utopiaBold);
+}
+
+.blog-post .blog-article article blockquote .quote-bottom i {
+  font-size: 3.5rem;
+  color: var(--dark);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.blog-post .blog-article article blockquote .quote-bottom cite {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: var(--latoBold);
+  display: block;
+  padding-left: 5rem;
+}
+
+.blog-post .blog-article article blockquote .quote-top p {
+  padding-left: 5rem;
+  font: italic lighter 1.75rem/2.5rem var(--utopiaItalic);
+}
+
+.blog-post .blog-article article .blog-extras {
+  background-color: #f0f0f0;
+  margin: 5rem 0;
+}
+
+.blog-post .blog-article article .blog-extras li:first-child {
+  border-bottom: 0.1rem solid #e2e2e2;
+}
+
+.blog-post .blog-article article .blog-extras li a {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 2.5rem 3rem;
+}
+
+.blog-post .blog-article article .blog-extras li a img {
+  width: 8.5rem;
+  height: 5.5rem;
+}
+
+.blog-post .blog-article article .blog-extras li a .extra-info {
+  padding-left: 2rem;
+}
+
+.blog-post .blog-article article .blog-extras li a .extra-info b {
+  display: block;
+  font: normal normal 1.5rem / normal var(--latoBold);
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+}
+
+.blog-post .blog-article article .blog-extras li a .extra-info em {
+  font: normal bold 0.9rem/1rem var(--latoBold);
+  color: var(--dark);
+  text-transform: uppercase;
+}
+
+.blog-post .article-close-img {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.blog-post .article-close-img img {
+  display: block;
+  margin-bottom: 1.5rem;
+  max-width: 100%;
+  max-height: 50rem;
+}
+
+.blog-post .article-close-img cite {
+  font-size: 1.3rem !important;
+  display: block;
+  font-family: var(--lato);
+  text-transform: capitalize;
+  padding-bottom: 2rem;
+  margin: 0 auto;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.blog-post .blog-close {
+  margin: 4rem 0 4rem 10rem;
+  max-width: 80%;
+}
+
+.blog-post .blog-close .blog-summary {
+  background-color: #f0f0f0;
+  padding: 5rem 6.5rem;
+}
+
+.blog-post .blog-close .blog-summary h3 {
+  font: normal normal 2rem / normal var(--utopiaBold);
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+.blog-post .blog-close .blog-author {
+  padding: 5rem 6.5rem;
+  margin-bottom: 4rem;
+}
+
+.blog-post .blog-close .blog-author > h4 {
+  font: normal normal 2rem/6rem var(--utopiaBold);
+}
+
+.blog-post .blog-close .blog-author .about-author {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.blog-post .blog-close .blog-author .about-author img {
+  width: 5rem;
+  height: 5rem;
+  clip-path: circle();
+}
+
+.blog-post .blog-close .blog-author .about-author .author-info {
+  padding-left: 3rem;
+}
+
+.blog-post .blog-close .blog-author .about-author .author-info h4 {
+  font: normal bold 1.2rem / normal var(--latoBold);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.blog-post .blog-close .blog-author .about-author .author-info h4 > span {
+  text-transform: none;
+}
+
+.blog-post .blog-close .blog-author .about-author .author-info em {
+  font: normal normal 1.2rem/1.5rem var(--lato);
+}
+
+.further-reading {
+  margin-bottom: 8rem;
+}
+
+.further-reading .heading h1 {
+  font: normal bold 3.5rem / normal var(--utopiaBold);
+  text-align: center;
+}
+
+.further-reading .heading h1 .break {
+  margin-top: 1rem !important;
+}
+
+.further-reading .reading-list .list-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.further-reading .reading-list .list-item .img-side img {
+  display: block;
+  width: 8rem;
+  height: 5rem;
+  margin-right: 4rem;
+}
+
+.further-reading .reading-list .list-item .info-side h2 {
+  font: normal bold 1.75rem/2rem var(--latoBold);
+  margin-bottom: 0.75rem;
+}
+
+.further-reading .reading-list .list-item .info-side cite {
+  font: normal bold 1rem/0.75rem var(--latoBold);
+  text-transform: uppercase;
+}

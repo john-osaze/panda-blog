@@ -1,0 +1,406 @@
+@media screen and (max-width: 1240px) {
+  .contact-us .contact-info,
+  .contact-us .contact-form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  header {
+    padding: 0 1rem;
+  }
+
+  header .header-inner #desktop-logo {
+    width: 50%;
+  }
+
+  header .header-inner .whole-nav {
+    width: fit-content;
+  }
+
+  header .header-inner .whole-nav .menu-handler {
+    display: block;
+  }
+
+  header .header-inner .whole-nav .whole-nav-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    position: fixed;
+    justify-content: start;
+    height: 100vh !important;
+    width: 55%;
+    top: 0;
+    right: -100%;
+    background-color: var(--white);
+    box-shadow: var(--boxShadow);
+    padding: 2rem 3rem;
+    transition: right 0.4s ease;
+  }
+
+  header .header-inner .whole-nav .whole-nav-inner nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header .header-inner .whole-nav .whole-nav-inner nav ul li {
+    margin: 1rem 0;
+  }
+
+  header .header-inner .whole-nav .whole-nav-inner ul li::before {
+    display: none;
+  }
+
+  header .header-inner .whole-nav .whole-nav-inner .tab-group {
+    margin: 1.5rem 0;
+  }
+
+  header .header-inner .whole-nav .whole-nav-inner .end-tab-group .nav-icon {
+    display: none;
+  }
+
+  header .header-inner .whole-nav .whole-nav-inner .end-tab-group li {
+    margin: 0;
+  }
+
+  header .header-inner .whole-nav .whole-nav-inner .mobile-menu-header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+  }
+
+  header
+    .header-inner
+    .whole-nav
+    .whole-nav-inner
+    .mobile-menu-header
+    .mobile-menu-close {
+    position: absolute;
+    right: 1.5rem;
+  }
+
+  header
+    .header-inner
+    .whole-nav
+    .whole-nav-inner
+    .mobile-menu-header
+    #mobile-menu-logo {
+    display: block;
+  }
+
+  #hamburger-toggler:checked ~ .whole-nav-inner {
+    transition: right 0.4s ease;
+    right: 0;
+  }
+
+  .hero {
+    padding: 0 3rem;
+  }
+
+  .hero .content-side {
+    max-width: 100%;
+  }
+
+  .contact-us {
+    justify-content: center;
+    padding: 1rem 3rem;
+  }
+
+  .contact-us .contact-info {
+    width: 100%;
+  }
+
+  .contact-us .contact-form form .input-group input {
+    width: 100%;
+  }
+
+  .contact-us .contact-form form .input-group #phone-number,
+  .contact-us .contact-form form .input-group #yourName {
+    margin-right: 0;
+  }
+
+  .contact-us .contact-info .contact-cards .card-item {
+    width: 100%;
+  }
+
+  footer {
+    padding: 4rem;
+    padding-bottom: 2rem;
+  }
+
+  footer .footer-main {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  }
+
+  footer .footer-main .footer-col.newsletter .subscribe-form form input {
+    max-width: 15rem;
+  }
+
+  footer .footer-main .footer-col.about,
+  footer .footer-main .footer-col.content-links {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+  .hero .image-side img {
+    max-width: 40rem;
+  }
+
+  .suggested-posts .post-cards {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem 0;
+  }
+
+  .contact-us {
+    padding: 1rem 1.5rem;
+  }
+
+  .contact-us .contact-form {
+    padding: 2rem 3rem;
+  }
+
+  .contact-us .contact-form form .input-group input {
+    width: 100%;
+    min-width: 20rem;
+  }
+
+  footer .footer-main .footer-col {
+    margin-bottom: 3rem;
+  }
+
+  footer {
+    padding: 4rem 3rem;
+    padding-bottom: 2rem;
+  }
+
+  .blog-post .blog-title h3 {
+    font-size: 3rem;
+  }
+
+  .blog-post .blog-article aside ol {
+    margin-bottom: 4rem;
+  }
+
+  .blog-post .blog-article aside ol li {
+    display: inline-block;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+  }
+
+  .blog-post .blog-article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .blog-post .blog-article article {
+    padding: 0 2rem;
+    max-width: 100%;
+  }
+
+  .blog-post .blog-close {
+    margin: 4rem 0 4rem 0;
+    max-width: 100%;
+  }
+
+  .blog-post .blog-close .blog-summary {
+    padding: 3.5rem 4rem;
+  }
+
+  .blog-post .blog-close .blog-author {
+    padding: 3rem 1rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  header .header-inner .whole-nav .whole-nav-inner {
+    width: 75%;
+  }
+
+  .hero .image-side img {
+    max-width: 32.5rem;
+  }
+
+  .hero .content-side .hero-cta h1 {
+    font: normal bold 3rem/3.5rem var(--latoBold);
+  }
+
+  .blog-posts .latest-posts .post-cards {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 3rem;
+  }
+
+  .trending-posts .post-cards {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 3rem;
+  }
+
+  .suggested-posts .post-cards {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem 0;
+  }
+
+  .suggested-posts .post-cards .single-post {
+    flex-wrap: wrap;
+    justify-content: start;
+    padding: 2rem;
+  }
+
+  .suggested-posts .post-cards .single-post .post-info {
+    margin: 1rem 0 0 0;
+  }
+
+  footer {
+    padding: 5rem 3rem;
+  }
+
+  footer .footer-colophon {
+    margin: 4rem 0 0 0;
+  }
+
+  .blog-post .blog-article article {
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+
+  .blog-post .blog-close .blog-author {
+    padding: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  .blog-post .blog-close .blog-author .about-author {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+  }
+
+  .blog-post .blog-close .blog-author .about-author .author-info {
+    margin-top: 1.5rem;
+    padding-left: 0;
+  }
+
+  .further-reading .reading-list .list-item .img-side img {
+    margin-right: 2rem;
+  }
+
+  .further-reading .reading-list .list-item .info-side h2 {
+    font: normal bold 1.5rem/2rem var(--latoBold);
+    margin-bottom: 0.5rem;
+  }
+
+  .further-reading .heading h1 {
+    font: normal bold 2.5rem / normal var(--utopiaBold);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hero .image-side img {
+    max-width: 27.5rem;
+  }
+
+  .blog-post .blog-title h3 {
+    font-size: 2.25rem;
+  }
+  .contact-us .contact-form {
+    padding: 2rem 1.5rem;
+  }
+
+  .contact-us .contact-form form .input-group input {
+    width: 100%;
+    min-width: 10rem;
+  }
+
+  .contact-us .contact-form .form-cta h2 {
+    font: normal bold 2.5rem/3rem var(--utopiaBold);
+  }
+
+  .blog-post .blog-article article blockquote .quote-top p {
+    padding-left: 2rem;
+    font: italic lighter 1.5rem/2.5rem var(--utopiaItalic);
+  }
+
+  .blog-post .blog-close .blog-author {
+    padding: 3rem 1rem;
+    margin-bottom: 4rem;
+  }
+
+  .further-reading .reading-list .list-item .img-side img {
+    margin-right: 2rem;
+  }
+
+  .further-reading .reading-list .list-item .info-side h2 {
+    font: normal bold 1.5rem/2rem var(--latoBold);
+    margin-bottom: 0.5rem;
+  }
+
+  .further-reading .reading-list .list-item .info-side cite {
+    font: normal bold 1rem/0.75rem var(--latoBold);
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 298px) {
+  .hero {
+    padding: 0 2rem;
+  }
+
+  .hero .image-side img {
+    max-width: 25rem;
+  }
+
+  .logo h2 {
+    font-size: 1.75rem;
+    font-family: var(--latoBold);
+  }
+
+  header .header-inner .whole-nav .mobile-menu label > i,
+  header .header-inner .whole-nav label > i {
+    font-size: 2.5rem;
+  }
+
+  .blog-post .blog-article aside ol li {
+    margin: 0 0.15rem;
+    padding: 0.6 0.75rem;
+  }
+
+  .blog-post .blog-article article blockquote .quote-top i {
+    font-size: 5.5rem;
+  }
+
+  .blog-post .blog-article article blockquote .quote-bottom i {
+    font-size: 2.5rem;
+  }
+
+  .blog-post .blog-article article blockquote .quote-bottom cite {
+    padding-left: 3rem;
+  }
+
+  .blog-post .blog-article article .blog-extras li a {
+    padding: 2rem;
+  }
+
+  .blog-post .blog-article article .blog-extras li a .extra-info {
+    padding-left: 1rem;
+  }
+
+  .blog-post .blog-article article .blog-extras li a .extra-info b {
+    font: normal normal 1.25rem / normal var(--latoBold);
+  }
+
+  .blog-post .blog-close .blog-summary {
+    padding: 3rem 2.5rem;
+  }
+
+  .further-reading .reading-list .list-item .info-side h2 {
+    font: normal bold 1.2rem / normal var(--latoBold);
+  }
+}

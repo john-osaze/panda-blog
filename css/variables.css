@@ -1,0 +1,19 @@
+/* Site Variables */
+:root {
+  /* Site  Colors */
+  --accent: #fafafa;
+  --white: #ffffff;
+  --dark: #0c0c0c;
+
+  /* Box Shadow */
+  --boxShadow: 0rem 0.25rem 2.5rem #72727242;
+
+  /* Site Fonts */
+  --lato: "Lato-Regular", sans-serif;
+  --latoBold: "Lato-Bold", sans-serif;
+  --utopia: "Utopia-Regular", serif;
+  --utopiaBold: "Utopia-Semibold", serif;
+  --utopiaItalic: "Utopia-Italic", serif;
+  --utopiaTitling: "Utopia-Titling", serif;
+  --arial: Arial, Helvetica, sans-serif;
+}

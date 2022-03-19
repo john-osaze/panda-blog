@@ -1,0 +1,462 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --dominant: #ffab18;
+  --complementary: #0a278f;
+  --accent: #343a40;
+  --white: #ffffff;
+  --dark: #0c0c0c;
+  --gradientColor: linear-gradient(
+    45deg,
+    var(--complementary),
+    var(--dominant)
+  );
+
+  --lato: "Lato-Regular", sans-serif;
+  --latoBold: "Lato-Bold", sans-serif;
+  --arial: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("fonts/lato-font/Lato-Regular.woff");
+}
+
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("fonts/lato-font/Lato-Bold.woff");
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--white);
+  font-family: var(--lato);
+  overflow-x: hidden;
+}
+
+:focus {
+  outline: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+i,
+em,
+cite {
+  font-style: normal;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+.img-custom {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+header {
+  padding: 0 5rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: var(--white);
+  z-index: 999;
+  transition: box-shadow .4s ease;
+}
+
+.header-offset{
+  box-shadow: 0rem 0.25rem 2.5rem #72727242;
+}
+
+header .header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.3rem 2rem;
+}
+
+header .header-inner .logo-area h2 {
+  font-size: 2.25rem;
+  font-family: var(--latoBold);
+}
+
+header .header-inner .logo-area span {
+  color: var(--dominant);
+  font-family: var(--latoBold);
+}
+
+header .header-inner nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .header-inner nav ul li {
+  margin: 0 1.2rem;
+}
+
+header .header-inner nav ul li a {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-family: var(--latoBold);
+  color: var(--dark);
+}
+
+main {
+  margin-top: 6rem !important;
+}
+
+.page-title a {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.page-title a > i {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  color: var(--dark);
+}
+
+.blog-post .blog-title {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.blog-post .blog-title h3 {
+  font-family: var(--latoBold);
+  font-size: 4.5rem;
+}
+
+.blog-post .blog-title cite {
+  display: block;
+  margin-top: 1rem;
+  font: normal normal 1.5rem/3rem var(--lato);
+}
+
+.blog-post .blog-hero {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.blog-post .blog-hero img {
+  display: block;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  height: 50rem;
+}
+
+.blog-post .blog-hero cite {
+  font-size: 1.3rem !important;
+  display: block;
+  font-family: var(--arial);
+  text-transform: capitalize;
+  padding-bottom: 2rem;
+  margin: 0 14.25rem;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.blog-post .blog-article {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  margin-top: 7.5rem;
+}
+
+.blog-post .blog-article aside ol li {
+  margin-bottom: 1.15rem;
+  border: 1px solid #cfcfcf;
+  padding: 0.85rem 1rem;
+  border-radius: 50%;
+  transition: all .4s ease;
+}
+
+.blog-post .blog-article article {
+  padding-left: 10rem;
+  max-width: 85%;
+}
+
+.blog-post .blog-article article p.first-paragraph {
+  font: oblique normal 1.75rem/2.5rem var(--latoBold);
+  /* margin-bottom: 4rem; */
+}
+
+.blog-post .blog-article article p.second-paragraph {
+  font: normal normal 1.65rem/2.25rem var(--arial);
+  margin-bottom: 4rem;
+}
+
+ .break {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+.break figure {
+  width: 0.2rem;
+  height: 0.6rem;
+  transform: rotate(30deg);
+  border-radius: 0.2px;
+  margin: 0 0.4rem;
+  background-color: var(--dominant);
+}
+
+.blog-post .blog-article article blockquote {
+  margin: 4rem 0;
+}
+
+.blog-post .blog-article article blockquote .quote-top,
+.blog-post .blog-article blockquote .quote-bottom {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.blog-post .blog-article article blockquote .quote-top {
+  align-items: flex-start !important;
+}
+
+.blog-post .blog-article article blockquote .quote-top i {
+  font-size: 7.5rem;
+  line-height: 6rem;
+  color: var(--dominant);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.blog-post .blog-article article blockquote .quote-bottom i {
+  font-size: 3.5rem;
+  color: var(--dominant);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.blog-post .blog-article article blockquote .quote-bottom cite {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: var(--latoBold);
+  display: block;
+  padding-left: 5rem;
+}
+
+.blog-post .blog-article article blockquote .quote-top p {
+  padding-left: 5rem;
+  font: oblique normal 1.75rem/2.5rem "Times New Roman", serif;
+}
+
+.blog-post .blog-article article ul.blog-extras {
+  background-color: #f0f0f0;
+  margin: 5rem 0;
+}
+
+.blog-post .blog-article article ul.blog-extras li:first-child {
+  border-bottom: 0.1rem solid #e2e2e2;
+}
+
+.blog-post .blog-article article ul.blog-extras li a {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 2.5rem 3rem;
+}
+
+.blog-post .blog-article article ul.blog-extras li a img {
+  width: 8.5rem;
+  height: 5.5rem;
+}
+
+.blog-post .blog-article article ul.blog-extras li a .extra-info {
+  padding-left: 2rem;
+}
+
+.blog-post .blog-article article ul.blog-extras li a .extra-info b {
+  display: block;
+  font: normal normal 1.5rem / normal var(--latoBold);
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+}
+
+.blog-post .blog-article article ul.blog-extras li a .extra-info em {
+  font: normal bold 0.9rem/1rem var(--arial);
+  color: var(--dark);
+  text-transform: uppercase;
+}
+
+.blog-post .article-close-img{
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.blog-post .article-close-img img{
+  display: block;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  height: 50rem;
+}
+
+.blog-post .article-close-img cite{
+  font-size: 1.3rem !important;
+  display: block;
+  font-family: var(--arial);
+  text-transform: capitalize;
+  padding-bottom: 2rem;
+  margin: 0 14.25rem;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.blog-post .blog-close{
+  margin: 4rem 0 4rem 10rem; 
+  max-width: 80%;
+}
+
+.blog-post .blog-close .blog-summary{
+  background-color: #f0f0f0;
+  padding: 5rem 6.5rem;
+}
+
+.blog-post .blog-close .blog-summary h3{
+  font: normal normal 2rem/normal var(--latoBold);
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+.blog-post .blog-close .blog-author{
+  padding: 5rem 6.5rem;
+  margin-bottom: 4rem;
+}
+
+.blog-post .blog-close .blog-author > h4{
+  font: normal normal 2rem/6rem var(--latoBold);
+}
+
+.blog-post .blog-close .blog-author .about-author{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.blog-post .blog-close .blog-author .about-author img{
+  width: 5rem;
+  height: 5rem;
+  clip-path: circle();
+}
+
+.blog-post .blog-close .blog-author .about-author .author-info{
+  padding-left: 3rem;
+}
+
+.blog-post .blog-close .blog-author .about-author .author-info h4{
+  font: normal bold 1rem/normal var(--arial);
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+}
+
+.blog-post .blog-close .blog-author .about-author .author-info em{
+  font: normal normal 1.2rem/1.5rem var(--lato);
+}
+
+.further-reading{
+  margin-bottom: 8rem;
+}
+
+.further-reading .heading h1{
+  font: normal bold 3.5rem/2rem var(--latoBold);
+  text-align: center;
+}
+
+.further-reading .heading h1 .break{
+  margin-top: 1rem !important;
+}
+
+.further-reading .reading-list .list-item{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.further-reading .reading-list .list-item .img-side img{
+  display: block;
+  width: 8rem;
+  height: 5rem;
+  margin-right: 4rem;
+}
+
+.further-reading .reading-list .list-item .info-side h2{
+  font: normal bold 1.75rem/2rem var(--latoBold);
+  margin-bottom: .75rem;
+}
+
+.further-reading .reading-list .list-item .info-side cite{
+  font: normal bold 1rem/.75rem var(--arial);
+  text-transform: uppercase;
+}
+
+footer{
+  padding: 3rem;
+  background-color: #202020;
+}
+
+footer .footer-inner{
+text-align: center;
+color: var(--white);
+}
+
+footer .footer-inner p a{
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.scroll-btn{
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .4s ease;
+}
+
+.scroll-btn #scroll-to-top{
+  display: block;
+  background-color: var(--dominant);
+  padding: .75rem .85rem;
+  border-radius: 50%;
+}
+
+.scroll-btn #scroll-to-top img{
+  width: 2.5rem;
+}
+
+.show{
+  opacity: 1 !important;
+  pointer-events: visible !important;
+}
+

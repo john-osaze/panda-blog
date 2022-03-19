@@ -1,0 +1,301 @@
+/* Imported CSS Files */
+@import url(variables.css);
+@import url(fonts.css);
+@import url(global.css);
+@import url(header.css);
+@import url(footer.css);
+
+main {
+  margin-top: 4rem !important;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 10rem;
+  width: 100%;
+}
+
+.hero .content-side {
+  max-width: 45%;
+}
+
+.hero .content-side div {
+  margin: 1.5rem 0;
+}
+
+.hero .content-side .hero-title h3 {
+  font: normal bold 1.6rem/2rem var(--utopiaTitling);
+}
+
+.hero .content-side .hero-cta h1 {
+  font: normal bold 4rem/5rem var(--latoBold);
+  text-transform: capitalize;
+}
+
+.hero .content-side .hero-btn {
+  margin-top: 2.5rem;
+}
+
+.blog-posts .post-group {
+  margin: 10rem 0;
+}
+
+.blog-posts .post-group .post-group-title {
+  text-align: center;
+  font: normal bold 3rem/3rem var(--utopiaBold);
+  margin: 5rem 0;
+}
+
+.blog-posts .latest-posts .post-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(33rem, 33rem));
+  gap: 3rem;
+  justify-content: center;
+  margin: 5rem 0;
+}
+
+.latest-posts .post-cards .single-post {
+  max-width: 33rem;
+  border-radius: 0 0 0.75rem 0.75rem;
+  transition: box-shadow 0.4s ease;
+}
+
+.latest-posts .post-cards .single-post:hover {
+  box-shadow: var(--boxShadow);
+  transition: box-shadow 0.4s ease;
+}
+
+.latest-posts .post-cards .single-post .post-img {
+  max-width: 33rem;
+  max-height: 24rem;
+  overflow: hidden;
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+
+.latest-posts .post-cards .single-post .post-img img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s ease;
+}
+
+.latest-posts .post-cards .single-post .post-img:hover img {
+  transform: scale(1.1);
+  transition: transform 0.4s ease;
+}
+
+.latest-posts .post-cards .single-post .post-info {
+  padding: 0.75rem 1.5rem 3.5rem 1.5rem;
+}
+
+.latest-posts .post-cards .single-post .post-info .post-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.latest-posts .post-cards .single-post .post-info .post-meta a,
+.latest-posts .post-cards .single-post .post-info .post-meta span {
+  font: normal bold 1.2rem/1rem var(--latoBold);
+}
+
+.latest-posts .post-cards .single-post .post-info .post-meta a {
+  background-color: gray;
+  color: var(--white);
+  padding: 0.75rem;
+  border-radius: 2rem;
+}
+
+.latest-posts .post-cards .single-post .post-info .post-title {
+  font: normal bold 1.75rem/2.5rem var(--latoBold);
+}
+
+.suggested-posts .post-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45rem, 45rem));
+  justify-content: center;
+  gap: 2rem 5rem;
+}
+
+.suggested-posts .post-cards .single-post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: box-shadow 0.4s ease;
+}
+
+.suggested-posts .post-cards .single-post:hover {
+  box-shadow: var(--boxShadow);
+}
+
+.suggested-posts .post-cards .single-post .post-img img {
+  width: 15rem;
+  height: 10rem;
+}
+
+.suggested-posts .post-cards .single-post .post-info {
+  margin-left: 2rem;
+}
+
+.suggested-posts .post-cards .single-post .post-info .post-title {
+  font: normal bold 1.5rem/2rem var(--latoBold);
+  margin-bottom: 1rem;
+}
+
+.suggested-posts .post-cards .single-post .post-info .post-meta span {
+  font: normal bold 1.2rem/1.5rem var(--latoBold);
+}
+
+.trending-posts .post-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(34rem, 34rem));
+  justify-content: center;
+  gap: 3rem;
+}
+
+.trending-posts .post-cards .single-post {
+  position: relative;
+}
+
+.trending-posts .post-cards .single-post .post-img {
+  max-width: 34rem;
+  max-height: 36rem;
+  border-radius: 0.75rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.trending-posts .post-cards .single-post .post-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.75rem;
+  transition: transform 0.4s ease;
+}
+
+.trending-posts .post-cards .single-post .post-img:hover img {
+  transform: scale(1.1);
+}
+
+.trending-posts .post-cards .single-post .post-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2rem;
+}
+
+.trending-posts .post-cards .single-post .post-info .post-title {
+  font: normal bold 1.5rem/2rem var(--latoBold);
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+.trending-posts .post-cards .single-post .post-info .post-meta span {
+  color: var(--white);
+}
+
+#contact {
+  background-color: var(--accent);
+  padding: 0.5rem 0 5rem 0;
+}
+
+.contact-us {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 12rem;
+}
+
+.contact-us .contact-info .contact-cards {
+  text-align: left;
+  width: 100%;
+}
+
+.contact-us .contact-info .contact-cards .card-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 0.25rem;
+  margin: 1rem 0;
+  box-shadow: 0rem 0.25rem 2.5rem #b1b1b140;
+  width: 30rem;
+}
+
+.contact-us .contact-info .contact-cards .card-item .card-icon {
+  background-color: #ebebeb;
+  padding: 1.5rem;
+  border-radius: 50%;
+  margin-right: 1.25rem;
+}
+
+.contact-us .contact-info .contact-cards .card-item .card-info b {
+  display: block;
+  font: normal bold 1.25rem/2rem var(--latoBold);
+}
+
+.contact-us .contact-info .contact-cards .card-item .card-info span {
+  font: normal normal 1.2rem/2rem var(--lato);
+}
+
+.contact-us .contact-form {
+  background-color: var(--white);
+  padding: 2.5rem 4rem;
+  box-shadow: 0rem 0.25rem 2.5rem #b1b1b140;
+  border-radius: 0.25rem;
+}
+
+.contact-us .contact-form .form-cta {
+  margin: 1rem 0 3rem 0;
+}
+
+.contact-us .contact-form .form-cta h2 {
+  text-transform: capitalize;
+  font: normal bold 2.5rem/2rem var(--utopiaBold);
+  margin-bottom: 0.75rem;
+}
+
+.contact-us .contact-form form .input-group {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.contact-us .contact-form form .input-group input {
+  min-width: 30rem;
+  padding: 1rem 1.5rem;
+  border-radius: 4rem;
+  border: 1.5px solid var(--dark);
+  margin: 0.5rem 0;
+}
+
+.contact-us .contact-form form .input-group #phone-number,
+.contact-us .contact-form form .input-group #yourName {
+  margin-right: 1.5rem;
+}
+
+.contact-us .contact-form form .send-btn input {
+  margin: 1rem 0;
+}
+
+.contact-us .contact-form form .message-box textarea {
+  width: 100%;
+  height: 20rem;
+  border: 1.5px solid var(--dark);
+  resize: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  margin: 0.5rem 0;
+}
+
+.contact-us .contact-form form .message-box textarea::placeholder,
+.contact-us .contact-form form .message-box textarea {
+  font: normal normal 1.4rem/2rem var(--lato);
+}

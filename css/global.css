@@ -1,0 +1,121 @@
+/* Global Page Stylings */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--white);
+  font-family: var(--lato);
+  overflow-x: hidden;
+}
+
+:focus {
+  outline: none;
+  border: none;
+}
+
+::selection {
+  background: #000;
+  color: var(--white);
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+i,
+em,
+cite {
+  font-style: normal;
+}
+
+i {
+  font-size: 2rem;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+.img-custom {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  /* max-width: 100rem; */
+  margin: 10rem 0;
+  padding: 0 1.5rem;
+}
+
+.logo h2 {
+  font-size: 2.25rem;
+  font-family: var(--latoBold);
+}
+
+.logo span {
+  color: var(--dark);
+  font-family: var(--latoBold);
+}
+
+.btn {
+  background: var(--dark);
+  border: 1.75px solid var(--dark);
+  color: var(--white);
+  padding: 1.25rem 2rem;
+  border-radius: 4rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+  background: transparent;
+  color: var(--dark);
+}
+
+.section-title {
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.section-title .heading {
+  font: normal bold 3.5rem/4rem var(--utopiaBold);
+  margin-bottom: 1rem;
+}
+
+.scroll-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.scroll-btn #scrollToTop {
+  display: inline-block;
+  background-color: var(--dark);
+  padding: 0.75rem 0.85rem;
+  border-radius: 50%;
+}
+
+.scroll-btn #scrollToTop i {
+  color: var(--white);
+}

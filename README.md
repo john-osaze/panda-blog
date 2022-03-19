@@ -1,2 +1,6 @@
-# panda-blog
-Panda Blog is a really funny website built with a very quirky inspiration. It was a built to be submitted as a project for my Udacity Nanodegree training. I hope you'd love it :)
+Disclaimer:
+All code written in this project's directory are custom codes and are written by me with no copy-pasted from other
+code sources.
+
+Colors:
+Colors used in this website are actually three in number. They include the following: Black, White and Gray

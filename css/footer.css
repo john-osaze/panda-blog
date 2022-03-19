@@ -1,0 +1,91 @@
+/* Page Footer Styles */
+footer {
+  padding: 7rem;
+  padding-bottom: 5rem;
+  background-color: #202020;
+}
+
+footer .footer-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  column-gap: 3rem;
+}
+
+footer .footer-main,
+.footer-main a,
+.footer-main span {
+  color: var(--white);
+}
+
+footer .footer-main .footer-col.about .about-item,
+footer .footer-main .footer-col.newsletter .newsletter-item {
+  margin-top: 1.75rem;
+}
+
+footer .footer-main .footer-col.about .social-media a {
+  margin-right: 1rem;
+}
+
+footer .footer-main .footer-col .col-title {
+  font: normal bolder 1.5rem/2rem var(--latoBold);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+footer .footer-main .footer-col.newsletter .col-title {
+  margin-left: 0;
+}
+
+footer .footer-main .footer-col.quicklink .link-group a {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+footer .footer-main .footer-col.quicklink .link-group a > i {
+  margin-left: -2rem;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+footer .footer-main .footer-col.quicklink .link-group a:hover i {
+  margin-left: -1rem;
+  opacity: 1;
+}
+
+footer .footer-main .footer-col.newsletter .subscribe-form form input {
+  border: 0;
+  padding: 1rem 1.5rem;
+  border-radius: 4rem 0 0 4rem;
+  border: 1.5px solid var(--dark);
+}
+
+footer .footer-main .footer-col.newsletter .subscribe-form .form-grp {
+  position: relative;
+}
+
+footer .footer-main .footer-col.newsletter .subscribe-form form a button {
+  position: absolute;
+  padding: 1rem 1.5rem;
+  border-radius: 0 4rem 4rem 0;
+}
+
+footer .footer-colophon {
+  text-align: center;
+  margin: 4rem 3rem 0 3rem;
+  padding-top: 3rem;
+  border-top: 1.5px solid #808080;
+}
+
+footer .footer-colophon .copyright-info {
+  color: var(--white);
+}
+
+footer .footer-colophon .copyright-info a {
+  color: var(--white);
+  text-decoration: underline;
+}

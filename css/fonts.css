@@ -1,0 +1,30 @@
+/* Web Fonts included in the site */
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../fonts/lato-font/Lato-Regular.woff");
+}
+
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("../fonts/lato-font/Lato-Bold.woff");
+}
+
+@font-face {
+  font-family: "Utopia-Regular";
+  src: url("../fonts/utopia-std/Utopia-Regular.otf");
+}
+
+@font-face {
+  font-family: "Utopia-Italic";
+  src: url("../fonts/utopia-std/Utopia-Italic.otf");
+}
+
+@font-face {
+  font-family: "Utopia-Semibold";
+  src: url("../fonts/utopia-std/Utopia-Semibold.otf");
+}
+
+@font-face {
+  font-family: "Utopia-Titling";
+  src: url("../fonts/utopia-std/Utopia-Titling.otf");
+}

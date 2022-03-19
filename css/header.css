@@ -1,0 +1,106 @@
+/* Navigation Menu Styles */
+header {
+  padding: 0 7.5rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: var(--white);
+  z-index: 999;
+  box-shadow: var(--boxShadow);
+}
+
+.header-offset {
+  box-shadow: var(--boxShadow);
+}
+
+header .header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.75rem 2rem;
+}
+
+header .header-inner #desktop-logo {
+  width: 20%;
+}
+
+header .header-inner .whole-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+header .header-inner .whole-nav .whole-nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+header
+  .header-inner
+  .whole-nav
+  .whole-nav-inner
+  .mobile-menu-header
+  #mobile-menu-logo {
+  display: none;
+}
+
+header .header-inner .whole-nav .menu-handler {
+  display: none;
+}
+
+header .header-inner .whole-nav label {
+  /* padding: 1rem;
+	border-radius: 50%; */
+  cursor: pointer;
+}
+
+header .header-inner .whole-nav .mobile-menu label > i,
+header .header-inner .whole-nav label > i {
+  font-size: 3rem;
+}
+
+header .header-inner .whole-nav #hamburger-toggler {
+  display: none;
+}
+
+header .header-inner nav ul,
+header .header-inner .end-tab-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .header-inner nav ul li,
+header .header-inner .end-tab-group li {
+  margin: 0 1.2rem;
+  position: relative;
+}
+
+header .header-inner nav ul li::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  display: block;
+  bottom: -3rem;
+  left: 0;
+  border-radius: 1rem 1rem 0 0;
+  border-bottom: 3px solid var(--dark);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.4s ease;
+}
+
+header .header-inner nav ul li:hover::before {
+  transform: scaleY(1);
+}
+
+header .header-inner nav ul li a {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-family: var(--latoBold);
+  color: var(--dark);
+}
